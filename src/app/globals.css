@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 3%;
+  --foreground: 0 0% 98%;
+  --card: 220 14% 8%;
+  --card-foreground: 0 0% 98%;
+  --popover: 222 18% 8%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 19 90% 63%;
+  --primary-foreground: 0 0% 5%;
+  --secondary: 217 32% 17%;
+  --secondary-foreground: 0 0% 98%;
+  --muted: 222 15% 18%;
+  --muted-foreground: 218 11% 65%;
+  --accent: 253 70% 60%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 82% 59%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 15% 18%;
+  --input: 220 15% 20%;
+  --ring: 19 90% 63%;
+  --success: 144 61% 50%;
+  --success-foreground: 0 0% 5%;
+  --warning: 44 96% 57%;
+  --warning-foreground: 0 0% 12%;
+  --radius: 0.75rem;
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+
+.light {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --primary: 19 90% 53%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --accent: 253 90% 60%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 85.7% 97.3%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --ring: 19 90% 53%;
+  --success: 144 73% 36%;
+  --success-foreground: 0 0% 98%;
+  --warning: 44 96% 57%;
+  --warning-foreground: 0 0% 12%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+}
